@@ -50,7 +50,7 @@ export function MainProfile() {
       setFollowers(followersCount);
       setFollowing(followingCount);
     })();
-  }, [userData, FollowBtn]);
+  }, [userData]);
   //Delete Handler:
   const deleteHandler = async () => {
     try {
