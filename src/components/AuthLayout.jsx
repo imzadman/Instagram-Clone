@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export function AuthLayout({ children, authentication = true }) {
   const [loading, setLoading] = useState(true);
@@ -21,6 +22,8 @@ export function AuthLayout({ children, authentication = true }) {
       <span className="loading loading-infinity loading-lg"></span>
     </>
   ) : (
-    <>{children}</>
+    <>
+      {children} <SpeedInsights />
+    </>
   );
 }
