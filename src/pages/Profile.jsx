@@ -312,7 +312,7 @@ export function Profile() {
         </div>
       </div>
     ) : (
-      <div className="w-full flex justify-center">
+      <div className="w-full h-screen flex justify-center">
         <div className="mt-10 px-8 py-4">
           <ProfileForm />
         </div>
