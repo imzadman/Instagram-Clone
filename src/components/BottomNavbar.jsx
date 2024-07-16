@@ -6,7 +6,7 @@ export function BottomNavbar() {
   const authStatus = useSelector((state) => state.auth.status);
   return (
     authStatus && (
-      <div className="w-full h-auto lg:hidden flex justify-between py-2 px-5 sticky bottom-0 z-[1] bg-white dark:bg-black border-t-2 border-gray-700">
+      <div className="w-full h-auto lg:hidden flex justify-between py-2 px-5 sticky bottom-0 z-[1] bg-white dark:bg-black border-t-2 border-gray-700 text-[1.2rem]">
         <Link to={"/"}>
           <i className="fa-solid fa-house"></i>{" "}
         </Link>

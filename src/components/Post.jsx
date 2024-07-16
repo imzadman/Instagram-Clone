@@ -77,7 +77,7 @@ export function Post() {
           </Link>
           {/* Dropdown */}
           <details
-            className="dropdown"
+            className="dropdown dropdown-left lg:dropdown-right"
             onClick={() => {
               document.getElementById("dots").classList.toggle("fa-xmark");
             }}
@@ -85,7 +85,7 @@ export function Post() {
             <summary className="btn bg-transparent hover:bg-transparent border-none">
               <i id="dots" className="fa-solid fa-ellipsis-vertical"></i>
             </summary>
-            <ul className="menu dropdown-content bg-base-100 dark:bg-gray-600 rounded z-[1] w-40 p-0 shadow-lg">
+            <ul className="menu dropdown-content bg-base-100 dark:bg-gray-600 rounded z-[1] w-40 p-0 shadow-lg text-xs lg:text-[1rem]">
               {" "}
               {isAuthor && (
                 <>

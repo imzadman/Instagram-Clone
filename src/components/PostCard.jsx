@@ -166,7 +166,7 @@ export function PostCard({ post, userProfile }) {
                 <img
                   src={storageService.previewFile(userProfile.profilePic)}
                   alt="dp"
-                  className="rounded-full aspect-square w-[6%] mr-2"
+                  className="rounded-full aspect-square w-[10%] xl:w-[8%] mr-2"
                 />
               ) : (
                 <i className="fa-regular fa-user bg-gray-400 rounded-full p-2"></i>
