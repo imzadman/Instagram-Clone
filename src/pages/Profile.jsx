@@ -37,7 +37,7 @@ export function Profile() {
         setFollowing(followingCount);
       })();
     })();
-  }, [userId]);
+  }, [userId, followers, following]);
   //Delete Handler:
   const deleteHandler = async () => {
     try {
