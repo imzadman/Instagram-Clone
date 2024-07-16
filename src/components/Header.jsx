@@ -65,7 +65,7 @@ export function Header() {
   }, [userData, profile]);
 
   return (
-    <div className="h-auto lg:h-screen w-full lg:w-[20vw] flex flex-row lg:flex-col items-center justify-between py-2 lg:py-8 px-4 lg:px-2 border-b sticky top-0 z-[1] lg:z-0 lg:border-r border-gray-600 dark:border-gray-800 bg-white dark:bg-black">
+    <div className="h-auto lg:h-screen w-full lg:w-[20vw] flex flex-row lg:flex-col items-center justify-between py-2 lg:py-8 pl-4 pr-2 lg:px-2 border-b sticky top-0 z-[1] lg:z-0 lg:border-r border-gray-600 dark:border-gray-800 bg-white dark:bg-black">
       {/* First Container */}
       {/* Logo */}
       <div className="">
