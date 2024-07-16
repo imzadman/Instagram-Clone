@@ -109,7 +109,7 @@ export function ProfileForm({ profile }) {
               <img
                 src={storageService.previewFile(profile.profilePic)}
                 alt={profile.userName}
-                className=" w-[30vw] md:w-[20vw] lg:w-[7vw] rounded-full aspect-square mb-3"
+                className=" w-[30vw] md:w-[20vw] lg:w-[7vw] rounded-full object-cover aspect-square mb-3"
               />
             </div>
           )}
