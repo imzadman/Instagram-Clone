@@ -85,10 +85,8 @@ export function PostCard({ post, userProfile }) {
     setLoading(true);
     try {
       const fetchedComments = await dbService.getComments(post.$id);
-      if (fetchedComments) {
-        setComments(fetchedComments);
-        setLoading(false);
-      }
+      setComments(fetchedComments);
+      setLoading(false);
       // Fetch user profiles for each comment
       const profiles = {};
       for (let comment of fetchedComments) {

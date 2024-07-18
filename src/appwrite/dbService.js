@@ -114,7 +114,6 @@ export class DbService {
   }
   async getUserPosts(userId) {
     let queries = [];
-    // queries.push(Query.equal("status", "Public"));
     if (userId) {
       queries.push(Query.equal("userId", userId));
     }
@@ -164,7 +163,6 @@ export class DbService {
   }
   async deleteComment(postId, commentId) {
     try {
-      //get the current post
       const post = await this.getPost(postId);
       // Parse the comments array
       let comments = post.comments
@@ -176,7 +174,6 @@ export class DbService {
       const updatedComments = comments.map((comment) =>
         JSON.stringify(comment)
       );
-      // Update the post with the new comments array
       return await this.databases.updateDocument(
         conf.appwriteDbId,
         conf.appwriteCollectionId1,

@@ -36,7 +36,6 @@ export class StorageService {
       return this.storage.getFilePreview(conf.appwriteBucketId, fileId);
     } catch (error) {
       console.log("storageService :: previewFile :: error", error);
-      // throw new Error(error.message || "Failed to preview file");
     }
   }
 }

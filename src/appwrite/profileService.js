@@ -74,7 +74,6 @@ export class ProfileService {
         conf.appwriteDbId,
         conf.appwriteCollectionId2,
         queries
-        // [Query.equal("status", "public")]
       );
     } catch (error) {
       console.log("getUsersService :: getUsersProfile :: error", error);

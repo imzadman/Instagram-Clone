@@ -17,7 +17,6 @@ export function ProfileForm({ profile }) {
       bio: profile?.bio || "",
       gender: profile?.gender || "Male",
       status: profile?.status || "Public",
-      // followerss: profile?.followerss || [],
     },
   });
   useEffect(() => {
@@ -26,7 +25,6 @@ export function ProfileForm({ profile }) {
       bio: profile?.bio || "",
       gender: profile?.gender || "Male",
       status: profile?.status || "Public",
-      // followerss: profile?.followerss || [],
     });
   }, [reset, profile, userData.name]);
   const navigate = useNavigate();
